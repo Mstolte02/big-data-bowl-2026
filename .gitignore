@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Environment variables
+.env
+.env.local
+
+# Competition data (download from Kaggle — not redistributable)
+data/
+
+# Generated output CSVs (produced by big_data_bowl2.ipynb)
+defender_attention_all.csv
+intervention_detailed_results.csv
+intervention_overall_summary.csv
+intervention_by_type.csv
+intervention_temporal_analysis.csv
+intervention_speed_sensitivity.csv
+intervention_direction_sensitivity.csv
+intervention_pairwise_interactions.csv
+top_defenders_attention.csv
+
+# OS
+.DS_Store
+Thumbs.db

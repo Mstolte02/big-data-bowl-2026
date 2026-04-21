@@ -1,0 +1,27 @@
+# Core data
+pandas
+numpy
+scipy
+
+# NFL tracking data
+nfl-data-py
+
+# Machine learning
+scikit-learn
+shap
+torch
+
+# Visualization
+matplotlib
+seaborn
+
+# Notebook utilities
+ipywidgets
+tqdm
+
+# Streamlit app
+streamlit
+
+# Note: versions are not pinned. This project was developed with
+# Python 3.11, PyTorch 2.x, and scikit-learn 1.x. Pin versions
+# for strict reproducibility.
