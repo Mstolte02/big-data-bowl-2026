@@ -49,7 +49,7 @@ data/
     ...  (weeks 01–18)
 ```
 
-> **Note:** The competition tracking data is not included in this repo due to Kaggle's distribution terms. Download it from the [NFL Big Data Bowl 2025 competition page](https://www.kaggle.com/competitions/nfl-big-data-bowl-2025/data).
+> **Note:** The competition tracking data is not included in this repo due to Kaggle's distribution terms. Download it from the [NFL Big Data Bowl 2026 competition page](https://www.kaggle.com/competitions/nfl-big-data-bowl-2026-analytics).
 
 ### Run the notebooks in order
 
@@ -81,12 +81,3 @@ big-data-bowl-2026/
 └── data/                             # Not committed — download from Kaggle
 ```
 
-## What I Learned / Future Work
-
-Building the counterfactual intervention engine was the most interesting part of this project. Attention weights alone tell you what the model looked at — but that conflates a defender being relevant with a defender being good. The removal analysis decouples these, and the rankings shifted meaningfully between the two metrics, which is a useful sanity check.
-
-**Future directions:**
-- Replace the LSTM encoder with a Transformer to better capture non-local dependencies between defenders (zone coverage, bracket coverage)
-- Extend to run plays — the current model is pass-completion focused
-- Calibrate the model's output as a true probability so impact scores are interpretable in expected-points terms
-- Add a route-matching layer to credit defenders even on plays where the QB checks off a receiver specifically because of pre-snap positioning
