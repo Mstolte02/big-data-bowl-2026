@@ -4,8 +4,7 @@ Quantifying NFL defensive back impact using a sequence attention neural network 
 
 ## Overview
 
-This project is my submission to the [2025 NFL Big Data Bowl](https://www.kaggle.com/competitions/nfl-big-data-bowl-2025), which asked competitors to measure defensive player value using Next Gen Stats tracking data from the 2023 NFL season.
-
+This project is my submission to the [2026 NFL Big Data Bowl](https://www.kaggle.com/competitions/nfl-big-data-bowl-2026-analytics), which asked competitors to descrie player movement with the ball in the air in a way that is accessible to coaches and football fans.
 The core question is deceptively hard: how do you measure a cornerback's impact on a play where the ball was never thrown their way? Traditional box-score stats miss most of what defenders actually do. My approach trains a temporal attention neural network on frame-by-frame tracking data — 402,576 post-throw defender frames across 12,966 plays — and uses the model's learned attention weights as a proxy for each defender's influence on the outcome of a pass attempt.
 
 To move from "attention" (what the model focused on) to "impact" (what the defender actually caused), I built a counterfactual intervention engine. For each play, I virtually "remove" a defender and measure how much the model's predicted completion probability changes. This gives every defender on every play a concrete impact score, regardless of whether the ball came their way.
